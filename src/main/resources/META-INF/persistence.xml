@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence     http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="odataJPAService">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>model.Matche</class>
+        <class>model.Team</class>
+
+        <properties>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="m10619_wrocltrop"/>
+            <property name="eclipselink.jdbc.password" value="Alamakota09"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://mysql0.mydevil.net/m10619_wrocltrop?serverTimezone=UTC&amp;autoReconnect=true&amp;useUnicode=true&amp;createDatabaseIfNotExist=true&amp;characterEncoding=utf-8&amp;interactiveClient=true"/>
+            <property name="eclipselink.logging.level" value="SEVERE"/>
+            <property name="eclipselink.orm.throw.exceptions" value="true"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
